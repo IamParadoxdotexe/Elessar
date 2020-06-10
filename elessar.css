@@ -1,8 +1,9 @@
 .elessar-handle {
   display: block;
-  background: black;
+  background: #8e24aa;
   height: 100%;
-  width: 5px;
+  width: 12px;
+  border-radius: 12px;
   cursor: ew-resize;
   position: absolute;
   top: 0;
@@ -44,50 +45,70 @@
   height: 2px;
 }
 .elessar-range {
+  font-size: 12px;
   position: absolute;
-  cursor: pointer;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: blue;
+  background: #f9d4ff;
   width: 0;
+  height: 200%;
+  margin-top: -3px;
   z-index: 10;
+  border-radius: 12px;
 }
 .elessar-vertical .elessar-range {
   width: auto;
   height: 0;
+}
+.elessar-labels {
+  padding-top: 12px;
+  font-size: 12px;
+  pointer-events: none;
 }
 .elessar-label {
   position: absolute;
   z-index: 5;
   pointer-events: none;
   border-left: 1px solid #999;
-  padding-left: 10px;
+  padding: 1px 0 0 3px;
+  width: fit-content;
 }
 .elessar-readonly {
-  opacity: 0.6;
-  cursor: default !important;
+  cursor: pointer !important;
 }
 .elessar-phantom {
-  background-color: transparent;
-  background: rgba(0,0,0,0.5);
+  background-color: #f9d4ff;
   color: white;
   cursor: pointer !important;
+  overflow: hidden;
 }
 .elessar-rangebar {
   position: relative;
-  height: 30px;
-  line-height: 30px;
-  background: #ccc;
+  height: 6px;
+  margin: 6px 0 !important;
+  line-height: 12px;
+  background: #eee;
+  border-radius: 6px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.elessar-barlabel {
+  position: relative;
+  display: block;
+  width: min-content;
+  margin: auto;
+  bottom: 24px;
+  background-color: #eee;
+  padding: 4px;
+  border-radius: 10px;
+  font-family: 'Roboto Condensed';
 }
 .elessar-delete-confirm {
   background: red;
